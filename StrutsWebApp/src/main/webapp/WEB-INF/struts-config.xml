@@ -12,7 +12,7 @@
 	</form-beans>
 
 	<global-forwards>
-		<forward name="mainpage" path="index.jsp" />
+		<forward name="mainpage" path="/index.jsp" redirect="true"/>
 	</global-forwards>
 
 	<action-mappings>
@@ -26,8 +26,8 @@
 		<action path="/submitCustomerForm"
 			type="com.jwt.struts.action.CustomerAction" name="CustomerForm"
 			scope="request" validate="true" input="/CustomerDetails.jsp">
-			<forward name="success" path="/success.jsp" />
-			<forward name="failure" path="/Failure.jsp" />
+			<forward name="success" path="/Success.jsp" />
+			<forward name="failure" path="/Pailure.jsp" />
 		</action>
 	</action-mappings>
 
