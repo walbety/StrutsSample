@@ -25,9 +25,9 @@
 
 		<action path="/submitCustomerForm"
 			type="com.jwt.struts.action.CustomerAction" name="CustomerForm"
-			scope="request" validate="true" input="CustomerDetails.jsp">
-			<forward name="success" path="Success.jsp" />
-			<forward name="failure" path="Failure.jsp" />
+			scope="request" validate="true" input="/CustomerDetails.jsp">
+			<forward name="success" path="/success.jsp" />
+			<forward name="failure" path="/Failure.jsp" />
 		</action>
 	</action-mappings>
 
